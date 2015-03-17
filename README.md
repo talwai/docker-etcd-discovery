@@ -27,12 +27,12 @@ $ docker build test_service
 $ docker run -e ETCD_HOST=${ETCD_HOST} -e ETCD_PORT=${ETCD_PORT} --name test_service <our_image_id>
 ```
 
-#### Run etcd-client
+#### Run etcd_client
 ```bash
 $ docker build etcd_client
 <our_image_id>
 $ docker run -e ETCD_HOST=${ETCD_HOST} -e ETCD_PORT=${ETCD_PORT} --name go_client <our_image_id>
 ```
 
-For more info: see blogpost here 
+For more info: see blogpost [here](https://github.com/talwai/docker-etcd-discovery/blob/master/BLOG.md) 
   
