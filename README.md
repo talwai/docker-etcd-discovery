@@ -2,6 +2,7 @@
 Service Discovery experiment with Docker and Etcd
 
 ## Contents
+```
 ├── etcd_client               // An example Go client performing service discovery via etcd watches
 │   ├── Dockerfile
 │   └── client.go
@@ -12,7 +13,7 @@ Service Discovery experiment with Docker and Etcd
 └── test_service              // An example service registering itself with etcd using talwai/etcd_service_publisher as a base
     ├── Dockerfile
     └── Dockerfile.mustache   // A Mustache template useful as a starting point for microservices that must register with etcd
-
+```
 
 ## HowTo
 
