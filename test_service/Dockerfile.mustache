@@ -1,0 +1,8 @@
+FROM talwai/etcd_service_publisher:latest
+
+#Add and install dependencies/ Perform setup here
+
+ENV MY_SERVICE_NAME {{ service_type }}
+ENV LISTENING_ON_PORT {{ service_port }}
+
+CMD python discovery/register_me.py ${MY_SERVICE_NAME} ${LISTENING_ON_PORT} && {{ main_process }}

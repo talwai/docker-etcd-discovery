@@ -1,0 +1,2 @@
+python-etcd==0.3.2
+netifaces==0.10.4
